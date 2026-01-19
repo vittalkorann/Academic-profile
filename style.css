@@ -1,0 +1,121 @@
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --accent: #1e73be;
+  --text: #1a1a1a;
+  --muted: #5a6c7d;
+  --border: #e0e0e0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 280px;
+  background: var(--card);
+  padding: 26px 20px;
+  border-right: 1px solid var(--border);
+  text-align: center;
+}
+
+.profile-photo {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 14px;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Sidebar Blocks */
+.side-block {
+  margin-bottom: 18px;
+}
+
+.side-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+  justify-content: center;
+}
+
+.side-link img {
+  width: 24px;
+  height: 24px;
+}
+
+.side-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Social icons */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.social-links img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+/* MAIN CONTENT */
+.content {
+  flex: 1;
+  padding: 24px 40px;
+}
+
+.topnav {
+  background: #ffffff;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.topnav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.section {
+  margin-bottom: 26px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.section h2 {
+  color: var(--accent);
+  margin-bottom: 8px;
+}
